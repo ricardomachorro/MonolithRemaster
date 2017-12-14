@@ -1,104 +1,109 @@
-html,body{
-    width:100%;
+body,html{
     height:100%;
     margin:0;
-    padding:0;
-}
-
-section{
-    width:100%;
-    height:100%;
-    margin:0;
-    padding-bottom:30%;
-    
-}
-
-.parallax{
-    background:#fff fixed no-repeat 50% 50%;
-    background-size:cover;
-}
-
-#section1{
-    background-image:url(../img/building.jpg);
-    padding-bottom: 74%;
-    padding-top: 20%;
-}
-
-#section2{
-    background-image:url(../img/chess.jpg);
-    size:100%;
-    padding-bottom:2%;
-    padding-top:140%;
-  
+    font-size:16px;
+    font-family:"Lato",sans-serif;
+    font-weigth:400;
+    color:#666;
 }
 
 .barraInicio{
    background-color:#006080;
-   color:azure;
-   font-size:50px;
    font-family:sans-serif;
-   text-align:left;
-   width: 100%;
-   height:80px;
+   font-size:20px;
+    color:#fff;
+    font:bolder;
 }
 
-.logo{
-    width:80px;
-    height:60px;
+.pimg1, .pimg2{
+  position:relative;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  min-height:100%;
 }
 
+.pimg1{
+    background-image:url(../img/building.jpg);
+    
+}
 
+.pimg2{
+    background-image:url(../img/chess.jpg);
+}
 
-.Introduccion {
+#ImgenLogo{
+    max-height:250px;
+    margin-bottom:100px;
+    padding-right:23%;
+    margin:0px;
+}
+
+.DivBienvenida{
+    position:inherit;
+    width:100%;
     text-align:center;
-    padding:4%;
-    color:white;
+    font-weight: bold;
+    color:#fff;
+    font-size:50px;
+    padding-top:120px;
+    padding-right:23%;
+    padding-left:23%;
+    padding-bottom:120px;
 }
 
-.Introduccion h1{
+.section{
     text-align:center;
-    font-family: sans-serif;
+    padding: 50px 80px;
+    background-color:#1A405F;
+    color:#fff;
 }
 
-#bien{
-    font-size:130px; 
+.section h2{
+   font-size:45px;
+   padding-bottom:35px;
 }
 
-#mensajeintro{
-   font-size:60px; 
+.section p{
+   font-size:25px;
+   padding-top:15px;
+   padding-bottom:15px;
+}
+
+
+.login{
+    position:inherit;
+    min-height:100%;
+    top:30%;
+    width:100%;
+    padding-top:130px;
+    padding-bottom:60px;
 }
 
 .loginBox{
-    position:absolute;
-    top:240%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    width:850px;
-    height:1290px;
-    padding:190px 60px;
-    box-sizing:boder-box;
-    background: rgba(0,0,0,.5);
-    margin-top:70%;
-
+   background: rgba(0,0,0,.5);
+   margin-left:30%;
+   margin-right:30%;
+   max-width:1440px;
+   font-size:100%;
 }
 
-.user{
-    width:200px;
-    height:200px;
-    border-radius:50%;
-    overflow: hidden;
-    position:absolute;
-    top:calc(-230px/2);
-    left:calc(50% - 90px);
+form{
+    margin:auto;
+    width:50%;
+    padding-bottom:4%;
+   padding-top:4%;
+    max-width:1000px;
 }
 
 .loginBox h2{
-    margin:0;
-    padding:0 0 20px;
+    padding-bottom:10px;
+    margin-left:10px;
+    margin-right:20px;
     color:rgb(188,212,232);
     text-align:center;
     font-weight:bold;
-    font-size:60px;
 }
 
 .loginBox p{
@@ -107,35 +112,35 @@ section{
     font-weight: bold;
     color:#fff;
     font-weight:bold;
-    font-size:44px;
 }
 
 .loginBox input{
     width:100%;
-    margin-bottom:90px;
+    display:block;
+    margin-bottom:20px;
 }
 
 .loginBox input[type="text"],
 .loginBox input[type="password"]{
     border:none;
+    display:block;
     border-bottom:1px solid #fff;
     background:transparent;
     outline:none;
-    height:80px;
+    height:30px;
     color:#fff;
-    font-size:44px;
     font-weight:bold;
 }
 ::placeholder{
     color:rgba(225,255,255,.5);
+    font-size:10px;
 }
 
 .loginBox input[type="submit"]{
     border:none;
     outline:none;
-    height:80px;
+    height:25px;
     color:#1f2e2e;
-    font-size:44px;
     font-weight:bold;
     background:#e6ffff;
     cursor:pointer;
@@ -147,35 +152,32 @@ section{
     color:#fff;
 }
 
-#forgotpass {
-    text-align:center;
-    color:#80bdff;
-    align-content:center;
-    font-size:25px;
+.loginBox button{
+    width:100%;
+    display:block;
+    border:none;
+    outline:none;
+    height:25px;
+    color:#1f2e2e;
+    font-size:12px;
     font-weight:bold;
-    align-items:center;
-    padding-left:30%;
-    padding-right:25%;
-    
-    background-color: transparent; 
+    background:#e6ffff;
+    cursor:pointer;
+    border-radius:20px;
 }
 
-#forgotpass:active{
-    color:#efed40;
-   
-}
-
-#forgotpass:hover{
-    color:#efed40;
-    text-decoration:none;
+.loginBox button:hover{
+    background:#5d8989;
+    color:#fff;
 }
 
 #nocuenta{
-    padding-top:10%;
-    padding-bottom:10%;
+    padding-top:2%;
+    padding-bottom:2%;
 }
 
 #registro{
     margin-bottom:40px;
 }
+
 
