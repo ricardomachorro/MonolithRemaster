@@ -3,11 +3,7 @@
     Created on : 25/11/2017, 05:59:13 PM
     Author     : Alex
 --%>
-<%@page import="java.sql.SQLException"%>
-<%@page import="java.sql.DriverManager"%>
-<%@page import="java.sql.ResultSet"%>
-<%@page import="java.sql.Statement"%>
-<%@page import="java.sql.Connection"%>
+<%@page import="java.sql.*"%>
 <%@page import="modelo.Email"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

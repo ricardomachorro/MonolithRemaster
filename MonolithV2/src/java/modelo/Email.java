@@ -36,7 +36,7 @@ public class Email {
                 //String host = "smtp-mail.outlook.com";
                 
                  Properties prop = System.getProperties();
-                
+                prop.put("mail.smtp.ssl.trust", "smtp.gmail.com");
                 prop.put("mail.smtp.starttls.enable","true");
                 prop.put("mail.smtp.host",host);
                 prop.put("mail.smtp.user",de);
@@ -69,11 +69,11 @@ public class Email {
                 
                 message.setSubject(asunto);
                 message.setText(mensaje);
-                
+               
                 Transport transport = sesion.getTransport("smtp");
                 
-                transport.connect(host,de,clave);
-                       
+               transport.connect(host,de,clave);
+               
                 
                 transport.sendMessage(message, message.getAllRecipients());
                 
@@ -82,7 +82,7 @@ public class Email {
                 enviado = true;
                 
             }catch(MessagingException e){
-                e.toString();
+                String ns=e.toString();       
             }
         
         return enviado;
