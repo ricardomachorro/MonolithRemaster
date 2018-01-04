@@ -6,10 +6,9 @@ body{
 
 /*Seccion de Barra de Navegacion*/
 .BarraDeInicio{
-   margin-bottom:13px;
    padding-bottom:15px;
    height:30%; 
-   background-color:#fff;
+   background-color:#B0B7D1;
 }
 /*Logo de Monolith para la Barra de Navegacion*/
 #LogoBarraInicio{

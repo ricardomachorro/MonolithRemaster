@@ -21,7 +21,7 @@
         <script src="js2/jquery.validate.js"></script>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light BarraDeInicio">
+        <nav class="navbar navbar-expand-lg navbar-light  BarraDeInicio">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -65,20 +65,20 @@
         </nav>
         <div class="container-fluid">
             <!--Barra de Botones para actividades rapidas-->
-            <div class="row" style="background-color:#fff;margin:12px;" >
+            <div class="row" style="background-color:#fff;" >
                 <div class=" col-12">
                     <!--Barra Titulo de Acciones Rapidas-->
-                    <div class="row">
+                   <!-- <div class="row">
                         <div class="col-12" style="background-color:#313D66; color:#fff;padding:13px;text-align:center;">
                             <img src="img/stopwatch-tool-to-control-test-time.svg" class="rounded float-left ImagenesResumen" >  Acciones rapidas<img src="img/stopwatch-tool-to-control-test-time.svg" class="rounded float-right ImagenesResumen" >
                         </div>
-                    </div>
+                    </div>-->
                     <!--Fin Barra Titulo de Acciones Rapidas-->
-                    <div class="row">
+                    <div class="row BarraBotonesFast">
                         <div class="col-1">
                         </div>
                         <div class="col-10">
-                            <div class="row BarraBotonesFast " >
+                            <div class="row  " >
                                 <div class="col-lg-2  col-sm-3">
                                 </div>
                                 <div class="col-lg-4 col-sm-3"  id="PanelBotonesFast">
@@ -222,7 +222,7 @@
             </div>
             <!--Fin Modal Nuevo Examen-->
             <!--Contenedor Resumen-->
-            <div class="row ContenedorResumen" style="background-color:#fff;margin:13px;" >
+            <div class="row ContenedorResumen" style="margin:13px;" >
                 <div class="col-12">
                     <div class="row" style="background-color:#313D66;color:#fff;padding:13px;text-align:center;">
                         <div class="col-12" >
@@ -328,7 +328,9 @@
                                             </div>
                                         </div> 
                                     </div>
-
+                                    <!--Fin Actividad Ejemplo-->
+                                    
+                                    
                                     <!--Examen de Ejemplo-->
                                     <div class="row" style="margin:12px;box-shadow:0 0px 7px;">
                                         <div class="col-12" style="background-color:#db5236;color:#fff;">
