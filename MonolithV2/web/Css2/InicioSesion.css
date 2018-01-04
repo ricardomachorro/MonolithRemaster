@@ -1,7 +1,6 @@
 /*Seccion para Lista de Pendientex y Finalizados*/
 .ContenedorResumen{
     padding-bottom:15px;
-    padding-top:15px;
 }
 
 .ContendorIndividualResumen{
@@ -17,7 +16,6 @@
 
 .ContenedorListaResumen{
     background-color:#F7F7F7;
-     padding:13px;
 }
 
 .ContenedorListaResumen ul{
@@ -38,7 +36,7 @@
 
 /*Contenedores de lso Botones*/
 #PanelBotonesFast{
-    padding:10px;
+    padding:25px;
 }
 
 /*Css Botones */
@@ -68,14 +66,14 @@
 /*Seccion Panel de Elementos Pendientes*/
 
 #MargenParaPendientes{
-    height:350px;
+    height:400px;
     margin:13px;
     background-color:#fff;
-    padding:13px;
 }
 
 #ContenedorPendientes{
     box-shadow:0 0px 13px;
+    margin:13px;
 }
 
 #TituloListaPendientes{
