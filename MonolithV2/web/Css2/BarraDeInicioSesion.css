@@ -1,6 +1,6 @@
 /*Seccion de Elementos Basicos*/
 body{
-    background-color:#00bcd4;
+    background-color:#e1f7f5;
 }
 /*Fin Seccion de Elementos Basicos*/
 
@@ -15,54 +15,14 @@ body{
 #LogoBarraInicio{
   height:30px;
   width:30px;
+  margin-right:20px;
+}
+/*313D66*/
+.ImagenesBarraInicio{
+  height:20px;
+  width:20px;
+  margin-right:5px;
+  margin-left:5px;
 }
 /*Fin Seccion de Barra de Navegacion*/
 
-/*Seccion de Barra de Botones Rapidos*/
-/*Barra de Botones*/
-.BarraBotonesFast{
-    box-shadow:0 0px 7px;
-    background-color:#fff
-}
-/*Contenedores de lso Botones*/
-#PanelBotonesFast{
-    padding:10px;
-}
-
-/*Css Botones */
-.botonfast{
-    width:100%;
-    height:100%;
-}
-
-.imagenesBotonesFast{
-    width:40px;
-    height:40px;
-    margin:7px;
-}
-/*Fin Seccion de Barra de Botones Rapidos*/
-
-/*Seccion Panel de Elementos Pendientes*/
-#ContenedorPanelPendientes{
-    margin:13px;
-}
-
-#PanelPendientes{
-    background-color:#fff;
-}
-
-#TituloPendientes{
-    background-color:#0062cc;
-    margin:13px;
-}
-#TituloPendientes div{
-   text-align:center;
-   padding:12px;
-   font-weight:bold;
-   font-family:sans-serif;
-   color:#fff;
-}
-
-
-
-/*Fin de Seccion Panel de Elementos Pendientes*/

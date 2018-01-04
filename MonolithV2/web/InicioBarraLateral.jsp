@@ -1,9 +1,3 @@
-<%-- 
-    Document   : InicioCss
-    Created on : 21-dic-2017, 12:45:35
-    Author     : Ricardo
---%>
-
 <%@page import="java.sql.*,java.io.*;"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -14,14 +8,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="Css/bootstrap.css" rel="stylesheet" type="text/css">
         <link href="Css2/BarraDeInicioSesion.css" rel="stylesheet" type="text/css">
-        <link href="Css2/InicioSesion.css" rel="stylesheet" type="text/css">
         <script src="js2/jquery-3.2.1.min.js"></script>
         <script src="js2/popper.min.js"></script>
         <script src="js2/bootstrap.min.js"></script>
         <script src="js2/jquery.validate.js"></script>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light BarraDeInicio">
+        <nav class="navbar navbar-expand-lg navbar-light  BarraDeInicio">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -30,46 +23,42 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" ><img src="img/home (1).svg" class="ImagenesBarraInicio" >Inicio</a>
+                        <a class="nav-link" >Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"><img src="img/signing-the-contract.svg" class="ImagenesBarraInicio" >Actividades</a>
+                        <a class="nav-link">Actividades</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"><img src="img/exam.svg" class="ImagenesBarraInicio" >Examenes</a>
+                        <a class="nav-link">Examenes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"><img src="img/group-button.svg" class="ImagenesBarraInicio" >Proyectos</a>
+                        <a class="nav-link">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"><img src="img/money-bag-with-dollar-symbol.svg" class="ImagenesBarraInicio" >Finanzas</a>
+                        <a class="nav-link">Finanzas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"><img src="img/international-delivery.svg" class="ImagenesBarraInicio" >Rutas</a>
+                        <a class="nav-link">Rutas</a>
                     </li>
-
-                </ul>
-                <ul class="navbar-nav mr-left mt-2 mt-lg-0">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            <img src="img/user.svg" class="ImagenesBarraInicio" > Usuario
+                            Usuario
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink" style="align-content:center;">
-                            <a class="dropdown-item" href="#"><img src="img/enter.svg" class="ImagenesBarraInicio" > Cerrar Sesion</a>
-                            <a class="dropdown-item" href="#"><img src="img/settings-work-tool.svg" class="ImagenesBarraInicio" >
-                                Configuracion</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Cerrar Sesion</a>
+                            <a class="dropdown-item" href="#">Configuracion</a>
                         </div>
                     </li>
                 </ul>
             </div>
         </nav>
         <div class="container-fluid">
-             <!--Barra de Botones para actividades rapidas-->
-            <div class="row " >
+            <!--Barra de Botones para actividades rapidas-->
+            <div class="row">
                 <div class="col-1">
                 </div>
                 <div class="col-10">
-                    <div class="row BarraBotonesFast " >
+                    <div class="row BarraBotonesFast" >
                         <div class="col-lg-2  col-sm-3">
                         </div>
                         <div class="col-lg-4 col-sm-3"  id="PanelBotonesFast">
@@ -86,7 +75,6 @@
                 </div>
             </div>
             <!-- Fin Barra de Botones para actividades rapidas -->
-            
             <!--Modal de registro de Actividad-->
             <div class="modal fade bd-example-modal-lg" id="NuevaActividad" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
@@ -210,69 +198,6 @@
                 </div>
             </div>
             <!--Fin Modal Nuevo Examen-->
-            <!--Contenedor Resumen-->
-            <div class="row ContenedorResumen" style="background-color:#fff;margin:13px;" >
-                <!--Cuadro de Pendientes-->
-                <div class="col-lg-6 col-md-6 col-sm-12" > 
-                    <div class="row ContendorIndividualResumen" >
-                        <div class="col-12" >
-                             <!--Barra del Titulo de Pendientes-->
-                            <div class="row" >
-                                <div class="col-12 TituloResumen" >
-                                    <a>Lista de Pendientes</a><img src="img/clock.svg" class="rounded float-right ImagenesResumen" >
-                                </div>     
-                            </div>
-                            <!--Fin Barra del Titulo de Pendientes-->
-                            <!--Contenedor de Pendientes-->
-                            <div class="row">
-                                <div class="col-12 ContenedorListaResumen" >
-                                    <ul>
-                                        <li>Actividades Pendientes:</li>
-                                        <li>Proyectos Pendientes:</li>
-                                        <li>Examenes Proximos:</li>
-                                        <li>Eventos Expirados:</li>
-                                    </ul>
-                                </div> 
-                            </div>
-                            <!--Fin Contenedor de Pendientes-->
-                        </div>
-                    </div>
-                </div>
-                <!--Fin Cuadro Pendientes-->
-                
-                <!--Cuadro de Eventos Finalizados-->
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="row ContendorIndividualResumen" >
-                        <div class="col-12" >
-                            <!--Barra del Titulo de Eventos Finalizados-->
-                            <div class="row"  style="">
-                                <div class="col-12 TituloResumen" >
-                                    <a>Eventos finalizados</a><img src="img/check-mark.svg" class="rounded float-right ImagenesResumen" >
-                                </div>     
-                            </div>
-                            <!--Fin Barra del Titulo de Eventos Finalizados-->
-                            <!--Contenedor de Eventos Finalizados -->
-                            <div class="row">
-                                <div class="col-12 ContenedorListaResumen" >
-                                    <ul>
-                                        <li>Actividades Finalizadas:</li>
-                                        <li>Proyectos Finalizados:</li>
-                                        <li>Examenes Finalizados:</li>
-                                         <li>Total Actividades Finalizados:</li>
-                                    </ul>
-                                </div> 
-                            </div>
-                            <!--Fin Contenedor de Eventos Finalizados -->
-                        </div>
-                    </div>
-                </div>
-                <!--Fin Cuadro de Eventos Finalizados-->
-            </div>
-            <!--Fin Contendor Resumen-->
-
-
-
-           
             <!--Tabla de listas pendientes-->
             <div class="row" id="MargenParaPendientes">
                 <div class="col-lg-2">
@@ -280,29 +205,29 @@
                 <div class="col-lg-8" id="ContenedorPendientes">
                     <div class="row">
                         <div class="col-12" id="TituloListaPendientes" >
-                            <a>Menos de 24 horas<img src="img/24-hours-delivery.svg" class="rounded float-right ImagenesResumen"></a>
+                            <a>Lista pendientes</a>
                         </div>
                     </div>
                     <div class="row" id="ContenedorListaPendientes" >
                         <div class="col-12" style="">
-
+                            
                             <!--Actividad de Ejemplo-->
                             <div class="row ListaObjeto" >
-                                <div class="col-12" style="color:#fff;">
+                                <div class="col-12" style="background-color:#904cad;color:#fff;">
                                     <div class="row TituloLista">
-                                        <div class="col-12" style="background-color:#313D66;padding-top:6px;padding-bottom:0px;">
+                                        <div class="col-12" style="padding-top:6px;padding-bottom:0px;">
                                             <p style="text-align:left;">Actividad Pendiente<span style="float:right;">23/12/2017</span></p>
                                         </div>  
                                     </div>
-                                    <div class="row" style="background-color:#B0B7D1;;padding-top:6px;padding-bottom:10px;">
-                                        <div class="col-12">
-                                            <a>hjhjkkjkjjk</a>
-                                        </div>
+                                     <div class="row" style="padding-top:6px;padding-bottom:10px;">
+                                         <div class="col-12">
+                                             <a>hjhjkkjkjjk</a>
+                                         </div>
                                     </div>
                                 </div> 
                             </div>
-
-                            <!--Examen de Ejemplo-->
+                            
+                             <!--Examen de Ejemplo-->
                             <div class="row" style="margin:12px;box-shadow:0 0px 7px;">
                                 <div class="col-12" style="background-color:#db5236;color:#fff;">
                                     <div class="row" style="margin-top:2px;">
@@ -310,15 +235,15 @@
                                             <h8>Tarea Pendiente</h8>
                                         </div>  
                                     </div>
-                                    <div class="row" style="margin-bottom:2px;">
-                                        <div class="col-12">
-                                            <a>hjhjkkjkjjk</a>
-                                        </div>
+                                     <div class="row" style="margin-bottom:2px;">
+                                         <div class="col-12">
+                                             <a>hjhjkkjkjjk</a>
+                                         </div>
                                     </div>
                                 </div> 
                             </div> 
-
-                            <!--Proyecto de Ejemplo-->
+                             
+                             <!--Proyecto de Ejemplo-->
                             <div class="row" style="margin:12px;box-shadow:0 0px 7px;">
                                 <div class="col-12" style="background-color:#1bc163;color:#fff;">
                                     <div class="row" style="margin-top:2px;">
@@ -326,13 +251,17 @@
                                             <h8>Tarea Pendiente</h8>
                                         </div>  
                                     </div>
-                                    <div class="row" style="margin-bottom:2px;">
-                                        <div class="col-12">
-                                            <a>hjhjkkjkjjk</a>
-                                        </div>
+                                     <div class="row" style="margin-bottom:2px;">
+                                         <div class="col-12">
+                                             <a>hjhjkkjkjjk</a>
+                                         </div>
                                     </div>
                                 </div> 
                             </div>
+                             
+                             
+                            
+                             
                         </div>
                     </div>
                 </div>
@@ -341,6 +270,10 @@
             </div>
         </div>
         <!--Fin de la lista pendientes-->
+
+
+
+
 
     </body>
 </html>
