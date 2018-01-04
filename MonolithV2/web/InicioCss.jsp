@@ -330,38 +330,40 @@
                                     </div>
                                     <!--Fin Actividad Ejemplo-->
                                     
-                                    
-                                    <!--Examen de Ejemplo-->
-                                    <div class="row" style="margin:12px;box-shadow:0 0px 7px;">
-                                        <div class="col-12" style="background-color:#db5236;color:#fff;">
-                                            <div class="row" style="margin-top:2px;">
-                                                <div class="col-12">
-                                                    <h8>Tarea Pendiente</h8>
+                                     <!--Actividad de Ejemplo-->
+                                    <div class="row ListaObjeto" >
+                                        <div class="col-12" style="color:#fff;">
+                                            <div class="row TituloLista">
+                                                <div class="col-12" style="background-color:#313D66;padding-top:6px;padding-bottom:0px;">
+                                                    <p style="text-align:left;">Actividad Pendiente<span style="float:right;">23/12/2017</span></p>
                                                 </div>  
                                             </div>
-                                            <div class="row" style="margin-bottom:2px;">
-                                                <div class="col-12">
-                                                    <a>hjhjkkjkjjk</a>
-                                                </div>
-                                            </div>
-                                        </div> 
-                                    </div> 
-
-                                    <!--Proyecto de Ejemplo-->
-                                    <div class="row" style="margin:12px;box-shadow:0 0px 7px;">
-                                        <div class="col-12" style="background-color:#1bc163;color:#fff;">
-                                            <div class="row" style="margin-top:2px;">
-                                                <div class="col-12">
-                                                    <h8>Tarea Pendiente</h8>
-                                                </div>  
-                                            </div>
-                                            <div class="row" style="margin-bottom:2px;">
+                                            <div class="row" style="background-color:#B0B7D1;;padding-top:6px;padding-bottom:10px;">
                                                 <div class="col-12">
                                                     <a>hjhjkkjkjjk</a>
                                                 </div>
                                             </div>
                                         </div> 
                                     </div>
+                                    <!--Fin Actividad Ejemplo-->
+                                    
+                                     <!--Actividad de Ejemplo-->
+                                    <div class="row ListaObjeto" >
+                                        <div class="col-12" style="color:#fff;">
+                                            <div class="row TituloLista">
+                                                <div class="col-12" style="background-color:#313D66;padding-top:6px;padding-bottom:0px;">
+                                                    <p style="text-align:left;">Actividad Pendiente<span style="float:right;">23/12/2017</span></p>
+                                                </div>  
+                                            </div>
+                                            <div class="row" style="background-color:#B0B7D1;;padding-top:6px;padding-bottom:10px;">
+                                                <div class="col-12">
+                                                    <a>hjhjkkjkjjk</a>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <!--Fin Actividad Ejemplo-->
+                                  
                                 </div>
                             </div>
                         </div>
