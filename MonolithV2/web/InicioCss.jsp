@@ -65,38 +65,41 @@
         </nav>
         <div class="container-fluid">
             <!--Barra de Botones para actividades rapidas-->
-            <div class="row" style="background-color:#fff;" >
-                <div class=" col-12">
-                    <!--Barra Titulo de Acciones Rapidas-->
-                   <!-- <div class="row">
-                        <div class="col-12" style="background-color:#313D66; color:#fff;padding:13px;text-align:center;">
-                            <img src="img/stopwatch-tool-to-control-test-time.svg" class="rounded float-left ImagenesResumen" >  Acciones rapidas<img src="img/stopwatch-tool-to-control-test-time.svg" class="rounded float-right ImagenesResumen" >
-                        </div>
-                    </div>-->
-                    <!--Fin Barra Titulo de Acciones Rapidas-->
-                    <div class="row BarraBotonesFast">
-                        <div class="col-1">
-                        </div>
-                        <div class="col-10">
-                            <div class="row  " >
-                                <div class="col-lg-2  col-sm-3">
-                                </div>
-                                <div class="col-lg-4 col-sm-3"  id="PanelBotonesFast">
-                                    <button class="botonfast btn btn-primary" data-toggle="modal" data-target="#NuevaActividad"><img class="imagenesBotonesFast" src="img/add-button-inside-black-circle.svg" >Actividad</button>
-                                </div>
-                                <div class="col-lg-4 col-sm-3"  id="PanelBotonesFast">
-                                    <button class="botonfast btn btn-primary" data-toggle="modal" data-target="#NuevoExamen"><img class="imagenesBotonesFast" src="img/add-button-inside-black-circle.svg">Examen</button>
-                                </div>
-                                <div class="col-lg-2 col-sm-3">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-1">
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!--<div class="row" style="background-color:#fff;" >
+                 <div class=" col-12">
+            <!--Barra Titulo de Acciones Rapidas-->
+            <!-- <div class="row">
+                 <div class="col-12" style="background-color:#313D66; color:#fff;padding:13px;text-align:center;">
+                     <img src="img/stopwatch-tool-to-control-test-time.svg" class="rounded float-left ImagenesResumen" >  Acciones rapidas<img src="img/stopwatch-tool-to-control-test-time.svg" class="rounded float-right ImagenesResumen" >
+                 </div>
+             </div>-->
+            <!--Fin Barra Titulo de Acciones Rapidas-->
+            <!--   <div class="row BarraBotonesFast">
+                   <div class="col-1">
+                   </div>
+                   <div class="col-10">
+                       <div class="row  " >
+                           <div class="col-lg-2  col-sm-3">
+                           </div>
+                           <div class="col-lg-4 col-sm-3"  id="PanelBotonesFast">
+                               <button class="botonfast btn btn-primary" data-toggle="modal" data-target="#NuevaActividad"><img class="imagenesBotonesFast" src="img/add-button-inside-black-circle.svg" >Actividad</button>
+                           </div>
+                           <div class="col-lg-4 col-sm-3"  id="PanelBotonesFast">
+                               <button class="botonfast btn btn-primary" data-toggle="modal" data-target="#NuevoExamen"><img class="imagenesBotonesFast" src="img/add-button-inside-black-circle.svg">Examen</button>
+                           </div>
+                           <div class="col-lg-2 col-sm-3">
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-1">
+                   </div>
+               </div>
+           </div>
+       </div>
+            
             <!-- Fin Barra de Botones para actividades rapidas -->
+
+
 
             <!--Modal de registro de Actividad-->
             <div class="modal fade bd-example-modal-lg" id="NuevaActividad" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -168,6 +171,8 @@
                 </div>
             </div>
             <!--Fin del Modal de Registro Actividad-->
+
+
             <!--Inicio Modal Nuevo Examen-->
             <div class="modal fade bd-example-modal-lg" id="NuevoExamen" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
@@ -221,159 +226,259 @@
                 </div>
             </div>
             <!--Fin Modal Nuevo Examen-->
-            <!--Contenedor Resumen-->
-            <div class="row ContenedorResumen" style="margin:13px;" >
-                <div class="col-12">
-                    <div class="row" style="background-color:#313D66;color:#fff;padding:13px;text-align:center;">
-                        <div class="col-12" >
-                            <img src="img/information.svg" class="rounded float-left ImagenesResumen" >Informe<img src="img/information.svg" class="rounded float-right ImagenesResumen" >
-                        </div>
-                    </div>
-                    <!--Cuadro de Pendientes-->
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12" > 
-                            <div class="row ContendorIndividualResumen" >
-                                <div class="col-12" >
-                                    <!--Barra del Titulo de Pendientes-->
-                                    <div class="row" >
-                                        <div class="col-12 TituloResumen" >
-                                            <a>Lista de Pendientes</a><img src="img/clock.svg" class="rounded float-right ImagenesResumen" >
-                                        </div>     
-                                    </div>
-                                    <!--Fin Barra del Titulo de Pendientes-->
-                                    <!--Contenedor de Pendientes-->
-                                    <div class="row">
-                                        <div class="col-12 ContenedorListaResumen" >
-                                            <ul>
-                                                <li>Actividades Pendientes:</li>
-                                                <li>Proyectos Pendientes:</li>
-                                                <li>Examenes Proximos:</li>
-                                                <li>Eventos Expirados:</li>
-                                            </ul>
-                                        </div> 
-                                    </div>
-                                    <!--Fin Contenedor de Pendientes-->
-                                </div>
-                            </div>
-                        </div>
-                        <!--Fin Cuadro Pendientes-->
 
-                        <!--Cuadro de Eventos Finalizados-->
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-                            <div class="row ContendorIndividualResumen" >
-                                <div class="col-12" >
-                                    <!--Barra del Titulo de Eventos Finalizados-->
-                                    <div class="row"  style="">
-                                        <div class="col-12 TituloResumen" >
-                                            <a>Eventos finalizados</a><img src="img/check-mark.svg" class="rounded float-right ImagenesResumen" >
-                                        </div>     
+
+            <!--Contenedor de Elementos-->
+            <div class="row" style="margin:13px;">
+                <div class="col-12">
+                    <div class="row" >
+
+                        <!--Contenedor de Elementos de Informe normales-->
+                        <div class="col-lg-4 col-md-4 col-sm-12" style="padding:12px;">
+                            <div class="row">
+                                <div class="col-12" style="background-color:#fff;">
+                                    <!--Titulo de Elemeentos del Informe-->
+                                    <div class="row" style="background-color:#313D66;color:#fff;padding:13px;text-align:center;">
+                                        <div class="col-12" >
+                                            <img src="img/information.svg" class="rounded float-left ImagenesResumen" >Informe<img src="img/information.svg" class="rounded float-right ImagenesResumen" >
+                                        </div>
                                     </div>
-                                    <!--Fin Barra del Titulo de Eventos Finalizados-->
-                                    <!--Contenedor de Eventos Finalizados -->
-                                    <div class="row">
-                                        <div class="col-12 ContenedorListaResumen" >
-                                            <ul>
-                                                <li>Actividades Finalizadas:</li>
-                                                <li>Proyectos Finalizados:</li>
-                                                <li>Examenes Finalizados:</li>
-                                                <li>Total Actividades Finalizados:</li>
-                                            </ul>
-                                        </div> 
+                                    <!--Titulo de Elementos del Informe-->
+
+                                    <!--Contenedor de Pendientes-->
+                                    <div class="row ContendorIndividualResumen" >
+                                        <div class="col-12" >
+                                            <!--Barra del Titulo de Pendientes-->
+                                            <div class="row" >
+                                                <div class="col-12 TituloResumen" >
+                                                    <a>Lista de Pendientes</a><img src="img/clock.svg" class="rounded float-right ImagenesResumen" >
+                                                </div>     
+                                            </div>
+                                            <!--Fin Barra del Titulo de Pendientes-->
+
+                                            <!--Lista de Pendientes-->
+                                            <div class="row">
+                                                <div class="col-12 ContenedorListaResumen" >
+                                                    <ul>
+                                                        <li>Actividades Pendientes:</li>
+                                                        <li>Proyectos Pendientes:</li>
+                                                        <li>Examenes Proximos:</li>
+                                                        <li>Eventos Expirados:</li>
+                                                    </ul>
+                                                </div> 
+                                            </div>
+                                            <!--Fin Lista de Pendientes-->
+
+
+                                        </div>
+                                    </div> 
+                                    <!--Fin Contenedor de Pendientes-->   
+
+
+                                    <!--Contenedor de Eventos Finalizados-->
+                                    <div class="row ContendorIndividualResumen" >
+                                        <div class="col-12" >
+                                            <!--Barra del Titulo de Eventos Finalizados-->
+                                            <div class="row"  style="">
+                                                <div class="col-12 TituloResumen" >
+                                                    <a>Eventos finalizados</a><img src="img/check-mark.svg" class="rounded float-right ImagenesResumen" >
+                                                </div>     
+                                            </div>
+                                            <!--Fin Barra del Titulo de Eventos Finalizados-->
+                                            <!--Lista de Eventos Finalizados -->
+                                            <div class="row">
+                                                <div class="col-12 ContenedorListaResumen" >
+                                                    <ul>
+                                                        <li>Actividades Finalizadas:</li>
+                                                        <li>Proyectos Finalizados:</li>
+                                                        <li>Examenes Finalizados:</li>
+                                                        <li>Total Actividades Finalizados:</li>
+                                                    </ul>
+                                                </div> 
+                                            </div>
+                                            <!--Fin Lista de Eventos Finalizados -->
+                                        </div>
                                     </div>
                                     <!--Fin Contenedor de Eventos Finalizados -->
                                 </div>
                             </div>
                         </div>
-                        <!--Fin Cuadro de Eventos Finalizados-->
+                        <!-- Fin Contenedor de Elementos de Informe normales-->
+
+                        <!-- Contenedor de Elementos Urgentes-->
+                        <div class="col-lg-8 col-md-8 col-sm-12">
+                            <div class="row" style="margin:13px;">
+                                <div class="col-12" style="background-color:#fff;">
+                                    <!--Titulo de Elementos Urgentes-->
+                                    <div class="row" style="background-color:#313D66;color:#fff;padding:13px;text-align:center;">
+                                        <div class="col-12" >
+                                            <img src="img/fire-alarm.svg" class="rounded float-left ImagenesResumen" >Urgente<img src="img/fire-alarm.svg" class="rounded float-right ImagenesResumen" >
+                                        </div>
+                                    </div>
+                                    <!--Fin Titulo de Elementos Urgentes-->
+
+                                    <!--Lista de Elementos Urgentes-->
+                                    <div class="row" style="margin:12px;">
+                                        <div class="col-lg-12"  id="ContenedorPendientes">
+                                            <div class="row">
+                                                <div class="col-12" id="TituloListaPendientes" >
+                                                    <a>Menos de 24 horas<img src="img/24-hours-delivery.svg" class="rounded float-right ImagenesResumen"></a>
+                                                </div>
+                                            </div>
+                                            <div class="row" id="ContenedorListaPendientes" >
+                                                <div class="col-12" style="">
+
+                                                    <!--Actividad de Ejemplo-->
+                                                    <div class="row ListaObjeto" >
+                                                        <div class="col-12" style="color:#fff;">
+                                                            <div class="row TituloLista">
+                                                                <div class="col-12" style="background-color:#313D66;padding-top:6px;padding-bottom:0px;">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <span style="float:left;">Fecha</span> 
+                                                                            <span style="float:right">
+                                                                                <button class="botonfast btn btn-primary" data-toggle="modal" data-target="#NuevaActividad"><img class="imagenesBotonesFast" src="img/edit.svg" ></button>
+                                                                                <button class="botonfast btn btn-primary" data-toggle="modal" data-target="#NuevaActividad"><img class="imagenesBotonesFast" src="img/checked.svg" ></button>
+                                                                                <button class="botonfast btn btn-primary" data-toggle="modal" data-target="#NuevaActividad"><img class="imagenesBotonesFast" src="img/trash.svg" ></button>
+                                                                            </span>  
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                           dsaddasdsdsdas
+                                                                        </div>
+                                                                    </div>
+                                                                </div>  
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                    <!--Fin Actividad Ejemplo-->    
+  
+                                                    <!--Actividad de Ejemplo-->
+                                                    <div class="row ListaObjeto" >
+                                                        <div class="col-12" style="color:#fff;">
+                                                            <div class="row TituloLista">
+                                                                <div class="col-12" style="background-color:#313D66;padding-top:6px;padding-bottom:0px;">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <span style="float:left;">Fecha</span> 
+                                                                            <span style="float:right">
+                                                                                <button class="botonfast btn btn-primary" data-toggle="modal" data-target="#NuevaActividad"><img class="imagenesBotonesFast" src="img/edit.svg" ></button>
+                                                                                <button class="botonfast btn btn-primary" data-toggle="modal" data-target="#NuevaActividad"><img class="imagenesBotonesFast" src="img/checked.svg" ></button>
+                                                                                <button class="botonfast btn btn-primary" data-toggle="modal" data-target="#NuevaActividad"><img class="imagenesBotonesFast" src="img/trash.svg" ></button>
+                                                                            </span>  
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                           dsaddasdsdsdas
+                                                                        </div>
+                                                                    </div>
+                                                                </div>  
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                    <!--Fin Actividad Ejemplo-->
+                                                    
+                                                    <!--Actividad de Ejemplo-->
+                                                    <div class="row ListaObjeto" >
+                                                        <div class="col-12" style="color:#fff;">
+                                                            <div class="row TituloLista">
+                                                                <div class="col-12" style="background-color:#313D66;padding-top:6px;padding-bottom:0px;">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <span style="float:left;">Fecha</span> 
+                                                                            <span style="float:right">
+                                                                                <button class="botonfast btn btn-primary" data-toggle="modal" data-target="#NuevaActividad"><img class="imagenesBotonesFast" src="img/edit.svg" ></button>
+                                                                                <button class="botonfast btn btn-primary" data-toggle="modal" data-target="#NuevaActividad"><img class="imagenesBotonesFast" src="img/checked.svg" ></button>
+                                                                                <button class="botonfast btn btn-primary" data-toggle="modal" data-target="#NuevaActividad"><img class="imagenesBotonesFast" src="img/trash.svg" ></button>
+                                                                            </span>  
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                           dsaddasdsdsdas
+                                                                        </div>
+                                                                    </div>
+                                                                </div>  
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                    <!--Fin Actividad Ejemplo-->
+                                                    
+                                                    
+                                                    <!--Actividad de Ejemplo-->
+                                                    <div class="row ListaObjeto" >
+                                                        <div class="col-12" style="color:#fff;">
+                                                            <div class="row TituloLista">
+                                                                <div class="col-12" style="background-color:#313D66;padding-top:6px;padding-bottom:0px;">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <span style="float:left;">Fecha</span> 
+                                                                            <span style="float:right">
+                                                                                <button class="botonfast btn btn-primary" data-toggle="modal" data-target="#NuevaActividad"><img class="imagenesBotonesFast" src="img/edit.svg" ></button>
+                                                                                <button class="botonfast btn btn-primary" data-toggle="modal" data-target="#NuevaActividad"><img class="imagenesBotonesFast" src="img/checked.svg" ></button>
+                                                                                <button class="botonfast btn btn-primary" data-toggle="modal" data-target="#NuevaActividad"><img class="imagenesBotonesFast" src="img/trash.svg" ></button>
+                                                                            </span>  
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                           dsaddasdsdsdas
+                                                                        </div>
+                                                                    </div>
+                                                                </div>  
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                    <!--Fin Actividad Ejemplo-->
+                                                    
+                                                    <!--Actividad de Ejemplo-->
+                                                    <div class="row ListaObjeto" >
+                                                        <div class="col-12" style="color:#fff;">
+                                                            <div class="row TituloLista">
+                                                                <div class="col-12" style="background-color:#313D66;padding-top:6px;padding-bottom:0px;">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <span style="float:left;">Fecha</span> 
+                                                                            <span style="float:right">
+                                                                                <button class="botonfast btn btn-primary" data-toggle="modal" data-target="#NuevaActividad"><img class="imagenesBotonesFast" src="img/edit.svg" ></button>
+                                                                                <button class="botonfast btn btn-primary" data-toggle="modal" data-target="#NuevaActividad"><img class="imagenesBotonesFast" src="img/checked.svg" ></button>
+                                                                                <button class="botonfast btn btn-primary" data-toggle="modal" data-target="#NuevaActividad"><img class="imagenesBotonesFast" src="img/trash.svg" ></button>
+                                                                            </span>  
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                           dsaddasdsdsdas
+                                                                        </div>
+                                                                    </div>
+                                                                </div>  
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                    <!--Fin Actividad Ejemplo-->
+                                                  
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Fin Lista de Elementos Urgentes-->
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--Fin de Contenedor de Elemntos Urgentes-->
                     </div>
                 </div>
             </div>
-            <!--Fin Contendor Resumen-->
+        </div>
+    </div>
+</div>
 
+<!--Fin de Contenedor de Elementos-->
 
-
-
-            <!--Tabla de listas pendientes-->
-            <div class="row" id="MargenParaPendientes">
-                <div class="col-12">
-                    <div class="row" style="background-color:#313D66;color:#fff;padding:13px;text-align:center;">
-                        <div class="col-12" >
-                            <img src="img/fire-alarm.svg" class="rounded float-left ImagenesResumen" >Urgente<img src="img/fire-alarm.svg" class="rounded float-right ImagenesResumen" >
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-2">
-                        </div>
-                        <div class="col-lg-8" id="ContenedorPendientes">
-                            <div class="row">
-                                <div class="col-12" id="TituloListaPendientes" >
-                                    <a>Menos de 24 horas<img src="img/24-hours-delivery.svg" class="rounded float-right ImagenesResumen"></a>
-                                </div>
-                            </div>
-                            <div class="row" id="ContenedorListaPendientes" >
-                                <div class="col-12" style="">
-
-                                    <!--Actividad de Ejemplo-->
-                                    <div class="row ListaObjeto" >
-                                        <div class="col-12" style="color:#fff;">
-                                            <div class="row TituloLista">
-                                                <div class="col-12" style="background-color:#313D66;padding-top:6px;padding-bottom:0px;">
-                                                    <p style="text-align:left;">Actividad Pendiente<span style="float:right;">23/12/2017</span></p>
-                                                </div>  
-                                            </div>
-                                            <div class="row" style="background-color:#B0B7D1;;padding-top:6px;padding-bottom:10px;">
-                                                <div class="col-12">
-                                                    <a>hjhjkkjkjjk</a>
-                                                </div>
-                                            </div>
-                                        </div> 
-                                    </div>
-                                    <!--Fin Actividad Ejemplo-->
-                                    
-                                     <!--Actividad de Ejemplo-->
-                                    <div class="row ListaObjeto" >
-                                        <div class="col-12" style="color:#fff;">
-                                            <div class="row TituloLista">
-                                                <div class="col-12" style="background-color:#313D66;padding-top:6px;padding-bottom:0px;">
-                                                    <p style="text-align:left;">Actividad Pendiente<span style="float:right;">23/12/2017</span></p>
-                                                </div>  
-                                            </div>
-                                            <div class="row" style="background-color:#B0B7D1;;padding-top:6px;padding-bottom:10px;">
-                                                <div class="col-12">
-                                                    <a>hjhjkkjkjjk</a>
-                                                </div>
-                                            </div>
-                                        </div> 
-                                    </div>
-                                    <!--Fin Actividad Ejemplo-->
-                                    
-                                     <!--Actividad de Ejemplo-->
-                                    <div class="row ListaObjeto" >
-                                        <div class="col-12" style="color:#fff;">
-                                            <div class="row TituloLista">
-                                                <div class="col-12" style="background-color:#313D66;padding-top:6px;padding-bottom:0px;">
-                                                    <p style="text-align:left;">Actividad Pendiente<span style="float:right;">23/12/2017</span></p>
-                                                </div>  
-                                            </div>
-                                            <div class="row" style="background-color:#B0B7D1;;padding-top:6px;padding-bottom:10px;">
-                                                <div class="col-12">
-                                                    <a>hjhjkkjkjjk</a>
-                                                </div>
-                                            </div>
-                                        </div> 
-                                    </div>
-                                    <!--Fin Actividad Ejemplo-->
-                                  
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <!--Fin de la lista pendientes-->
-
-    </body>
+</div>
+</body>
 </html>

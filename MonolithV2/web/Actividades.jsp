@@ -1,9 +1,3 @@
-    <%-- 
-    Document   : Actividades
-    Created on : 05-nov-2017, 16:05:25
-    Author     : Ricardo
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.sql.*,java.io.*;"%>
 <!DOCTYPE html>
@@ -258,7 +252,7 @@
                     </div>
                     <!--Fin Modal Nueva Actividad-->
                      <!--Modal de registro de Actividad-->
-                     <jsp:include page="modal.jsp" />
+                   
                     
     <!--Fin del Modal de Registro Actividad-->
      <%
@@ -410,5 +404,3 @@
     </body>
    
 </html>
-
-

@@ -45,7 +45,8 @@
 }
 
 .botonfast{
-    
+    width:100%;
+    height:30px;
     padding:0px;
     color:#fff;
     font-family:sans-serif;
@@ -71,12 +72,11 @@
 #MargenParaPendientes{
     height:400px;
     margin:13px;
-    background-color:#fff;
 }
 
 #ContenedorPendientes{
     box-shadow:0 0px 13px;
-    margin:12px;
+    margin:13px;
 }
 
 #TituloListaPendientes{
@@ -104,4 +104,6 @@
     border-color:#fff;
 }
 /*Fin de Seccion Panel de Elementos Pendientes*/
+
+
 

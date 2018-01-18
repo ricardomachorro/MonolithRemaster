@@ -11,8 +11,17 @@ create table Usuario(
     NivelEstudio varchar(40),
 	Pais varchar(50),
 	Direccion varchar(200),
-	Contrasena varchar(70)
+	Contrasena varchar(70),
+    Autenticado varchar (70)
 );
+
+create table Validacion(
+IdAdendum int primary key not null auto_increment,
+Nombre varchar(20) not null,
+adendum varchar (50) not null
+);
+
+select * from Validacion;
 
 create table Actividad(
 	IDActividad int primary key not null auto_increment,
@@ -152,5 +161,5 @@ on Usuario.IDUsuario=Colaboradores.IDColaborador where Mensaje.IDProyecto=1 and 
 
 delete  from colaboradores;
 delete  from Mensaje;
-delete  from Usuario where IDUsuario=3;
+delete  from Usuario;
 select * from colaboradores inner join usuario on usuario.IDUsuario=colaboradores.IDUsuario where usuario.NombreUsuario='rick';

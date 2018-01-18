@@ -19,6 +19,11 @@
         </file>
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/E:/6-Semestre/MonolitheRemasterizado/MonolithRemaster/Monolith/src/java/FunciónMonolith/Ingreso.java</file>
+            <file>file:/E:/6-Semestre/MonolitheRemasterizado/MonolithRemaster/Monolith/web/index.html</file>
+            <file>file:/E:/6-Semestre/MonolitheRemasterizado/MonolithRemaster/Monolith/src/java/FunciónMonolith/EnvioKerberos.java</file>
+            <file>file:/E:/6-Semestre/MonolitheRemasterizado/MonolithRemaster/Monolith/src/java/FunciónMonolith/ServerCliente.java</file>
+        </group>
     </open-files>
 </project-private>
