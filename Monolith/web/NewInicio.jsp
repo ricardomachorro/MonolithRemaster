@@ -70,42 +70,10 @@
             </div>
         </nav>
         <div class="container-fluid">
-            <!--Barra de Botones para actividades rapidas-->
-            <!--<div class="row" style="background-color:#fff;" >
-                 <div class=" col-12">
-            <!--Barra Titulo de Acciones Rapidas-->
-            <!-- <div class="row">
-                 <div class="col-12" style="background-color:#313D66; color:#fff;padding:13px;text-align:center;">
-                     <img src="img/stopwatch-tool-to-control-test-time.svg" class="rounded float-left ImagenesResumen" >  Acciones rapidas<img src="img/stopwatch-tool-to-control-test-time.svg" class="rounded float-right ImagenesResumen" >
-                 </div>
-             </div>-->
-            <!--Fin Barra Titulo de Acciones Rapidas-->
-            <!--   <div class="row BarraBotonesFast">
-                   <div class="col-1">
-                   </div>
-                   <div class="col-10">
-                       <div class="row  " >
-                           <div class="col-lg-2  col-sm-3">
-                           </div>
-                           <div class="col-lg-4 col-sm-3"  id="PanelBotonesFast">
-                               <button class="botonfast btn btn-primary" data-toggle="modal" data-target="#NuevaActividad"><img class="imagenesBotonesFast" src="img/add-button-inside-black-circle.svg" >Actividad</button>
-                           </div>
-                           <div class="col-lg-4 col-sm-3"  id="PanelBotonesFast">
-                               <button class="botonfast btn btn-primary" data-toggle="modal" data-target="#NuevoExamen"><img class="imagenesBotonesFast" src="img/add-button-inside-black-circle.svg">Examen</button>
-                           </div>
-                           <div class="col-lg-2 col-sm-3">
-                           </div>
-                       </div>
-                   </div>
-                   <div class="col-1">
-                   </div>
-               </div>
-           </div>
-       </div>
             
-            <!-- Fin Barra de Botones para actividades rapidas -->
-
-
+            <!-- Grafica -->
+            
+            <!-- Fin Grafica  -->
 
             <!--Modal de registro de Actividad-->
             <div class="modal fade bd-example-modal-lg" id="NuevaActividad" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -242,9 +210,9 @@
                         <!--Contenedor de Elementos de Informe normales-->
                         <div class="col-lg-4 col-md-4 col-sm-12" style="padding:12px;">
                             <div class="row">
-                                <div class="col-12" style="background-color:#fff;">
+                                <div class="col-12">
                                     <!--Titulo de Elemeentos del Informe-->
-                                    <div class="row" style="background-color:#313D66;color:#fff;padding:13px;text-align:center;">
+                                    <div class="row ListasColgantes" style="">
                                         <div class="col-12" >
                                             <img src="img/information.svg" class="rounded float-left ImagenesResumen" >Informe<img src="img/information.svg" class="rounded float-right ImagenesResumen" >
                                         </div>
@@ -313,10 +281,10 @@
 
                         <!-- Contenedor de Elementos Urgentes-->
                         <div class="col-lg-8 col-md-8 col-sm-12">
-                            <div class="row" style="margin:13px;">
-                                <div class="col-12" style="background-color:#fff;">
+                            <div class="row ContenedoresListasColgantes" >
+                                <div class="col-12">
                                     <!--Titulo de Elementos Urgentes-->
-                                    <div class="row" style="background-color:#313D66;color:#fff;padding:13px;text-align:center;">
+                                    <div class="row ListasColgantes">
                                         <div class="col-12" >
                                             <img src="img/fire-alarm.svg" class="rounded float-left ImagenesResumen" >Urgente<img src="img/fire-alarm.svg" class="rounded float-right ImagenesResumen" >
                                         </div>

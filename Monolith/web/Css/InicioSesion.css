@@ -1,4 +1,17 @@
-/*Seccion para Lista de Pendientex y Finalizados*/
+.ContenedoresListasColgantes{
+    margin:13px;
+}
+
+/*  Seccion para listas colgantes*/
+.ListasColgantes{
+    background-color:#313D66;
+    color:#fff;
+    padding:13px;
+    text-align:center;
+}
+/*Fin   Seccion para listas colgantes*/
+
+/*Seccion para Lista de Pendientes y Finalizados*/
 .ContenedorResumen{
     padding-bottom:15px;
 }
