@@ -1,3 +1,4 @@
+
 <%-- 
     Document   : InicioSesion
     Created on : 23/10/2017, 11:34:35 AM
@@ -51,7 +52,8 @@
 </script>
 <%
                     } else {
-
+                response.sendRedirect("NewInicio.jsp");
+                       /*
                         sesion.setAttribute("usuario", Usuario);
                         sesion.setAttribute("password", Password);
                         out.println("<html>");
@@ -198,7 +200,7 @@
                                 + " </header>");
                         out.println("</div>");
                         out.println("</body>");
-                        out.println("</html>");
+                        out.println("</html>");*/
                     }
                 } else {
                     sesion.invalidate();
@@ -214,6 +216,8 @@
             out.print(error.toString());
         }
     } else {
+         response.sendRedirect("NewInicio.jsp");
+        /*
         String User = sesion.getAttribute("usuario").toString();
         out.println("<html>");
         out.println("<head>");
@@ -359,7 +363,7 @@
                 + " </header>");
         out.println("</div>");
         out.println("</body>");
-        out.println("</html>");
+        out.println("</html>");*/
     }
 
 
