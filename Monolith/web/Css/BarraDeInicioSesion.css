@@ -8,7 +8,7 @@ body{
 .BarraDeInicio{
    padding-bottom:15px;
    height:30%; 
-   background-color:#B0B7D1;
+   background-color:#17a2b8;
 }
 /*Logo de Monolith para la Barra de Navegacion*/
 #LogoBarraInicio{
@@ -16,7 +16,7 @@ body{
   width:30px;
   margin-right:20px;
 }
-/*313D66*/
+
 .ImagenesBarraInicio{
   height:20px;
   width:20px;

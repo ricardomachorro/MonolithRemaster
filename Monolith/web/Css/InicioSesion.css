@@ -1,13 +1,14 @@
 .ContenedoresListasColgantes{
     margin:13px;
 }
-
 /*  Seccion para listas colgantes*/
 .ListasColgantes{
-    background-color:#313D66;
-    color:#fff;
+    color:#313D66;
     padding:13px;
-    text-align:center;
+    text-height:max-size;
+    font-weight:bolder;
+    border-bottom:6px solid #17a2b8;
+    background-color:#fff;
 }
 /*Fin   Seccion para listas colgantes*/
 
@@ -22,7 +23,7 @@
 }
 
 .TituloResumen{
-    background-color:#B0B7D1;
+    background-color:#309599;
     text-align:center;
     padding:12px;
 }
@@ -43,14 +44,7 @@
     height:25px;
 }
 
-/*Fin Seccion de Barra de Botones Rapidos*/
 
-/*Barra de Botones*/
-
-/*Contenedores de lso Botones*/
-#PanelBotonesFast{
-    padding:25px;
-}
 
 /*Css Botones */
 .BarraBotonesFast{
@@ -93,8 +87,7 @@
 }
 
 #TituloListaPendientes{
-     background-color:#B0B7D1;
-     font-weight:bolder;
+     background-color:#309599;
      text-align:center;
      font-family:sans-serif;
      padding:13px;
@@ -109,6 +102,7 @@
 .ListaObjeto{
     margin:12px;
     box-shadow:0 0px 7px;
+    color:#fff;background-color:#408fb2;padding-top:6px;padding-bottom:0px;
 }
 
 .TituloLista{

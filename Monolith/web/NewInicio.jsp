@@ -75,133 +75,7 @@
             
             <!-- Fin Grafica  -->
 
-            <!--Modal de registro de Actividad-->
-            <div class="modal fade bd-example-modal-lg" id="NuevaActividad" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" align="center" style="text-align:center" id="exampleModalLabel">Nueva Actividad</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body actividadformcont"  >
-                            <form  class="actividadform" style="width:100%;"  >
-                                <div class="row targetactividad"  style="width:100%;">
-                                    <div class="col-6 col-sm-auto" style="width:100%;">
-                                        <label  class="col-form-label">Nombre actividad</label>
-                                    </div>
-                                    <div class="col-6  col-sm-auto" style="width:100%;">
-                                        <input type="text" class="form-control" id="recipient-name" placeholder="Nombre Actividad">
-                                    </div>  
-                                </div> 
-                                <div class="row targetactividad" style="width:100%;">
-                                    <div class="col-6 col-sm-auto" style="width:100%;">
-                                        <label  class="col-form-label">Forma de Entrega</label>
-                                    </div>
-                                    <div class="col-6  col-sm-auto" style="width:100%;">
-                                        <input type="text" class="form-control" id="recipient-name" placeholder="Forma de Entrega">
-                                    </div>
-                                </div> 
-                                <div class="row targetactividad" style="width:100%;" >
-                                    <div class="col-3 targetactividadfecha">
-                                        <label  class="col-form-label">Fecha de Entrega</label>
-                                    </div>
-                                    <div class="col-3">
-                                        <select id="inputState" class="form-control">
-                                            <option selected>Dia</option>
-                                            <option>...</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-3">
-                                        <select id="inputState" class="form-control">
-                                            <option selected>Mes</option>
-                                            <option>...</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-3">
-                                        <select id="inputState" class="form-control">
-                                            <option selected>Año</option>
-                                            <option>...</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="row descripcionproyecto">
-                                    <label for="message-text" class="form-control-label descripcionproyecto">Descripcion:</label>
-                                    <textarea class="form-control descripcionproyecto" id="message-text"></textarea>
-                                </div>
-                                <div class="row">
-                                    <div class="col-5">
-                                    </div>
-                                    <div class="col-4">
-                                        <button class="btn btn-primary" >Guardar Actividad</button>
-                                    </div>
-                                    <div class="col-3">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Fin del Modal de Registro Actividad-->
-
-
-            <!--Inicio Modal Nuevo Examen-->
-            <div class="modal fade bd-example-modal-lg" id="NuevoExamen" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" align="center" style="text-align:center" id="exampleModalLabel">Nuevo Examen</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body actividadformcont"  >
-                            <form  class="examenform" id="examenform" style="width:100%;" method="post" action="IngresoExamen"  >
-                                <div class="row targetactividad"  style="width:100%;">
-                                    <div class="col-6 col-sm-auto" style="width:100%;">
-                                        <label  class="col-form-label">Nombre actividad</label>
-                                    </div>
-                                    <div class="col-6  col-sm-auto" style="width:100%;">
-                                        <input type="text" class="form-control" id="Titulo" placeholder="Nombre Examen" name="Titulo">
-                                    </div>  
-                                </div> 
-                                <div class="row targetactividad" style="width:100%;">
-                                    <div class="col-6 col-sm-auto" style="width:100%;">
-                                        <label  class="col-form-label">Forma de Entrega</label>
-                                    </div>
-                                    <div class="col-6  col-sm-auto" style="width:100%;">
-                                        <input type="text" class="form-control" id="FormaEntrega" placeholder="Forma de Entrega"  name="FormaEntrega">
-                                    </div>
-                                </div> 
-                                <div class="row targetactividad" style="width:100%;" >
-                                    <div class="col-12 targetactividadfecha">
-                                        <label  class='col-form-label'>Fecha de Entrega</label>
-                                        <input type="date" id="FechaEntrega" class="col-12" name="FechaEntrega"> 
-                                    </div>
-                                </div>
-                                <div class="row descripcionproyecto">
-                                    <label for="message-text" class="form-control-label descripcionproyecto">Descripcion:</label>
-                                    <textarea class="form-control descripcionproyecto" id="Descripcion" name="Descripcion"></textarea>
-                                </div>
-                                <div class="row">
-                                    <div class="col-5">
-                                    </div>
-                                    <div class="col-4">
-                                        <button class="btn btn-primary">Guardar Examen</button>
-                                    </div>
-                                    <div class="col-3">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Fin Modal Nuevo Examen-->
-
-
+         
             <!--Contenedor de Elementos-->
             <div class="row" style="margin:13px;">
                 <div class="col-12">
@@ -214,7 +88,9 @@
                                     <!--Titulo de Elemeentos del Informe-->
                                     <div class="row ListasColgantes" style="">
                                         <div class="col-12" >
-                                            <img src="img/information.svg" class="rounded float-left ImagenesResumen" >Informe<img src="img/information.svg" class="rounded float-right ImagenesResumen" >
+                                            
+                                            Informe
+                                           
                                         </div>
                                     </div>
                                     <!--Titulo de Elementos del Informe-->
@@ -286,7 +162,7 @@
                                     <!--Titulo de Elementos Urgentes-->
                                     <div class="row ListasColgantes">
                                         <div class="col-12" >
-                                            <img src="img/fire-alarm.svg" class="rounded float-left ImagenesResumen" >Urgente<img src="img/fire-alarm.svg" class="rounded float-right ImagenesResumen" >
+                                            Urgente
                                         </div>
                                     </div>
                                     <!--Fin Titulo de Elementos Urgentes-->
@@ -296,7 +172,7 @@
                                         <div class="col-lg-12"  id="ContenedorPendientes">
                                             <div class="row">
                                                 <div class="col-12" id="TituloListaPendientes" >
-                                                    <a>Menos de 24 horas<img src="img/24-hours-delivery.svg" class="rounded float-right ImagenesResumen"></a>
+                                                    <a>Menos de 24 horas<img src="img/24-hours.svg" class="rounded float-right ImagenesResumen"></a>
                                                 </div>
                                             </div>
                                             <div class="row" id="ContenedorListaPendientes" >
@@ -304,9 +180,9 @@
 
                                                     <!--Actividad de Ejemplo-->
                                                     <div class="row ListaObjeto" >
-                                                        <div class="col-12" style="color:#fff;">
+                                                        <div class="col-12" style="">
                                                             <div class="row TituloLista">
-                                                                <div class="col-12" style="background-color:#313D66;padding-top:6px;padding-bottom:0px;">
+                                                                <div class="col-12" >
                                                                     <div class="row">
                                                                         <div class="col-12">
                                                                             <span style="float:left;">Fecha</span> 
@@ -328,11 +204,11 @@
                                                     </div>
                                                     <!--Fin Actividad Ejemplo-->    
   
-                                                    <!--Actividad de Ejemplo-->
+                                                       <!--Actividad de Ejemplo-->
                                                     <div class="row ListaObjeto" >
-                                                        <div class="col-12" style="color:#fff;">
+                                                        <div class="col-12" style="">
                                                             <div class="row TituloLista">
-                                                                <div class="col-12" style="background-color:#313D66;padding-top:6px;padding-bottom:0px;">
+                                                                <div class="col-12" >
                                                                     <div class="row">
                                                                         <div class="col-12">
                                                                             <span style="float:left;">Fecha</span> 
@@ -352,13 +228,12 @@
                                                             </div>
                                                         </div> 
                                                     </div>
-                                                    <!--Fin Actividad Ejemplo-->
-                                                    
-                                                    <!--Actividad de Ejemplo-->
+                                                    <!--Fin Actividad Ejemplo-->  
+                                                      <!--Actividad de Ejemplo-->
                                                     <div class="row ListaObjeto" >
-                                                        <div class="col-12" style="color:#fff;">
+                                                        <div class="col-12" style="">
                                                             <div class="row TituloLista">
-                                                                <div class="col-12" style="background-color:#313D66;padding-top:6px;padding-bottom:0px;">
+                                                                <div class="col-12" >
                                                                     <div class="row">
                                                                         <div class="col-12">
                                                                             <span style="float:left;">Fecha</span> 
@@ -378,60 +253,7 @@
                                                             </div>
                                                         </div> 
                                                     </div>
-                                                    <!--Fin Actividad Ejemplo-->
-                                                    
-                                                    
-                                                    <!--Actividad de Ejemplo-->
-                                                    <div class="row ListaObjeto" >
-                                                        <div class="col-12" style="color:#fff;">
-                                                            <div class="row TituloLista">
-                                                                <div class="col-12" style="background-color:#313D66;padding-top:6px;padding-bottom:0px;">
-                                                                    <div class="row">
-                                                                        <div class="col-12">
-                                                                            <span style="float:left;">Fecha</span> 
-                                                                            <span style="float:right">
-                                                                                <button class="botonfast btn btn-primary" data-toggle="modal" data-target="#NuevaActividad"><img class="imagenesBotonesFast" src="img/edit.svg" ></button>
-                                                                                <button class="botonfast btn btn-primary" data-toggle="modal" data-target="#NuevaActividad"><img class="imagenesBotonesFast" src="img/checked.svg" ></button>
-                                                                                <button class="botonfast btn btn-primary" data-toggle="modal" data-target="#NuevaActividad"><img class="imagenesBotonesFast" src="img/trash.svg" ></button>
-                                                                            </span>  
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="row">
-                                                                        <div class="col-12">
-                                                                           dsaddasdsdsdas
-                                                                        </div>
-                                                                    </div>
-                                                                </div>  
-                                                            </div>
-                                                        </div> 
-                                                    </div>
-                                                    <!--Fin Actividad Ejemplo-->
-                                                    
-                                                    <!--Actividad de Ejemplo-->
-                                                    <div class="row ListaObjeto" >
-                                                        <div class="col-12" style="color:#fff;">
-                                                            <div class="row TituloLista">
-                                                                <div class="col-12" style="background-color:#313D66;padding-top:6px;padding-bottom:0px;">
-                                                                    <div class="row">
-                                                                        <div class="col-12">
-                                                                            <span style="float:left;">Fecha</span> 
-                                                                            <span style="float:right">
-                                                                                <button class="botonfast btn btn-primary" data-toggle="modal" data-target="#NuevaActividad"><img class="imagenesBotonesFast" src="img/edit.svg" ></button>
-                                                                                <button class="botonfast btn btn-primary" data-toggle="modal" data-target="#NuevaActividad"><img class="imagenesBotonesFast" src="img/checked.svg" ></button>
-                                                                                <button class="botonfast btn btn-primary" data-toggle="modal" data-target="#NuevaActividad"><img class="imagenesBotonesFast" src="img/trash.svg" ></button>
-                                                                            </span>  
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="row">
-                                                                        <div class="col-12">
-                                                                           dsaddasdsdsdas
-                                                                        </div>
-                                                                    </div>
-                                                                </div>  
-                                                            </div>
-                                                        </div> 
-                                                    </div>
-                                                    <!--Fin Actividad Ejemplo-->
+                                                    <!--Fin Actividad Ejemplo-->  
                                                   
                                                     
                                                 </div>
