@@ -15,7 +15,7 @@ public class ServerCliente {
 
     static final String HOST1 = "192.168.0.7";
     static final int PUERTO1 = 5000;
-    static final String HOST2 = " 192.168.0.7";
+    static final String HOST2 = "192.168.0.7";
     static final int PUERTO2 = 4000;
     ObjectOutputStream alServidor;
     ObjectInputStream delServidor;

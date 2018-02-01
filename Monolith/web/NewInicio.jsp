@@ -10,8 +10,7 @@
     HttpSession sesion = request.getSession();
     String Usuario = request.getParameter("usuario");
     String Password = request.getParameter("contrasenia");
-      sesion.setAttribute("usuario", Usuario);
-     sesion.setAttribute("password", Password);
+     
 %>
 <html>
     <head>
@@ -36,22 +35,22 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" ><img src="img/home (1).svg" class="ImagenesBarraInicio" >Inicio</a>
+                        <a class="nav-link" href="NewInicio.jsp" ><img src="img/home (1).svg" class="ImagenesBarraInicio" >Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"><img src="img/signing-the-contract.svg" class="ImagenesBarraInicio" >Actividades</a>
+                        <a class="nav-link"  href="Actividades.jsp"><img src="img/signing-the-contract.svg" class="ImagenesBarraInicio" >Actividades</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"><img src="img/exam.svg" class="ImagenesBarraInicio" >Examenes</a>
+                        <a class="nav-link"  href="Examen.jsp"><img src="img/exam.svg" class="ImagenesBarraInicio" >Examenes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"><img src="img/group-button.svg" class="ImagenesBarraInicio" >Proyectos</a>
+                        <a class="nav-link" href="Proyectos.html" ><img src="img/group-button.svg" class="ImagenesBarraInicio" >Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"><img src="img/money-bag-with-dollar-symbol.svg" class="ImagenesBarraInicio" >Finanzas</a>
+                        <a class="nav-link" href="Finanzas.jsp" ><img src="img/money-bag-with-dollar-symbol.svg" class="ImagenesBarraInicio" >Finanzas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"><img src="img/international-delivery.svg" class="ImagenesBarraInicio" >Rutas</a>
+                        <a class="nav-link" href="Rutas.jsp" ><img src="img/international-delivery.svg" class="ImagenesBarraInicio" >Rutas</a>
                     </li>
 
                 </ul>
