@@ -56,6 +56,14 @@
         <url-pattern>/MarcarActividadFinalizada</url-pattern>
     </servlet-mapping>
     <servlet>
+        <servlet-name>MarcarActividadNoFinalizada</servlet-name>
+        <servlet-class>FunciónMonolith.MarcarActividadNoFinalizada</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MarcarActividadNoFinalizada</servlet-name>
+        <url-pattern>/MarcarActividadNoFinalizada</url-pattern>
+    </servlet-mapping>
+    <servlet>
         <servlet-name>ChatWindow</servlet-name>
         <servlet-class>FunciónMonolith.ChatWindow</servlet-class>
     </servlet>

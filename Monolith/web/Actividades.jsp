@@ -348,7 +348,7 @@ Author     : Ricardo
                                     out.println("</button>");
                                     out.println("</div>");
                                     out.println("<div class='modal-body actividadformcont'>");
-                                    out.println("<form  class='actividadform' style='width:100%;' method='post' action='MarcarActividadFinalizada' >");
+                                    out.println("<form  class='actividadform' style='width:100%;' method='post' action='MarcarActividadNoFinalizada' >");
                                     out.println("<div class='row targetactividad'  style='width:100%;'>");;
                                     out.println("<div class='col-6 col-sm-auto' style='width:100%;'>");
                                     out.println("<label  class='col-form-label'>La Actividad " + r.getString("Titulo") + " se cambiara de estado en el sistema</label>");
