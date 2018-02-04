@@ -99,6 +99,22 @@ public class DataBase {
         ps.execute();
         c.close();
     }
+    
+    public void CambiarActividadFinalizada(String id) throws SQLException {
+        int identic = Integer.parseInt(id);
+        String sql = "update actividad set Estado='Finalizada' where IDActividad=" + identic + ";";
+        ps = c.prepareStatement(sql);
+        ps.execute();
+        c.close();
+    }
+    
+     public void CambiarActividadNoFinalizada(String id) throws SQLException {
+        int identic = Integer.parseInt(id);
+        String sql = "update actividad set Estado='No Finalizada' where IDActividad=" + identic + ";";
+        ps = c.prepareStatement(sql);
+        ps.execute();
+        c.close();
+    }
 
     public void IngresarExamen(Examen exa) throws SQLException {
         String sql = "insert into examen(Titulo,FormaDeEntregar,Descripcion,IDUsuario,FechaLimite,Estado) values (?,?,?,?,?,?);";

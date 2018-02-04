@@ -167,7 +167,7 @@
                                     <!--Fin Titulo de Elementos Urgentes-->
 
                                     <!--Lista de Elementos Urgentes-->
-                                    <div class="row" style="margin:12px;">
+                                    <div class="row">
                                         <div class="col-lg-12"  id="ContenedorPendientes">
                                             <div class="row">
                                                 <div class="col-12" id="TituloListaPendientes" >
@@ -175,7 +175,7 @@
                                                 </div>
                                             </div>
                                             <div class="row" id="ContenedorListaPendientes" >
-                                                <div class="col-12" style="">
+                                                <div class="col-12" >
 
                                                     <!--Actividad de Ejemplo-->
                                                     <div class="row ListaObjeto" >

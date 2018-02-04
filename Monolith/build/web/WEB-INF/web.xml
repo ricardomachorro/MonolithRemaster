@@ -47,6 +47,14 @@
         <servlet-name>ELiminarActividad</servlet-name>
         <url-pattern>/ELiminarActividad</url-pattern>
     </servlet-mapping>
+     <servlet>
+        <servlet-name>MarcarActividadFinalizada</servlet-name>
+        <servlet-class>FunciónMonolith.MarcarActividadFinalizada</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MarcarActividadFinalizada</servlet-name>
+        <url-pattern>/MarcarActividadFinalizada</url-pattern>
+    </servlet-mapping>
     <servlet>
         <servlet-name>ChatWindow</servlet-name>
         <servlet-class>FunciónMonolith.ChatWindow</servlet-class>

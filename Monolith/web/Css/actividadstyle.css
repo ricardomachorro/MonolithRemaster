@@ -1,3 +1,21 @@
+/*  Seccion para listas colgantes*/
+
+.ContenedoresListasColgantes{
+    padding:13px;
+}
+
+.ListasColgantes{
+    color:#313D66;
+    padding:13px;
+    text-height:max-size;
+    font-weight:bolder;
+    border-bottom:6px solid #17a2b8;
+    background-color:#fff;
+}
+/*Fin   Seccion para listas colgantes*/
+
+
+
 /*CSS Titulo de la Lista Actividades
 */
 .titulolista{
@@ -16,12 +34,20 @@
     background-color:#DDD9D9;
 }
 
+/*Nueva Actividad CSS*/
+.CartaNuevaActividad{
+    width: 20rem;
+    border-width:120px;
+    border-color:#000;
+    background-color:#000;
+}
+/*Fin Nueva Actividad CSS*/
+
 .carta{
     width: 20rem;
     border-width:120px;
     border-color:#000;
     background-color:#000;
-    
 }
 
 .btn-carta {

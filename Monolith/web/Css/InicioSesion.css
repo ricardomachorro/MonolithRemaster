@@ -1,7 +1,9 @@
+/*  Seccion para listas colgantes*/
+
 .ContenedoresListasColgantes{
     margin:13px;
 }
-/*  Seccion para listas colgantes*/
+
 .ListasColgantes{
     color:#313D66;
     padding:13px;
@@ -83,7 +85,9 @@
 
 #ContenedorPendientes{
     box-shadow:0 0px 13px;
-    margin:12px;
+    margin-top:12px;
+    
+    margin-right:7px;
 }
 
 #TituloListaPendientes{
