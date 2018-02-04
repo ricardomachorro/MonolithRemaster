@@ -9,8 +9,8 @@
 <!DOCTYPE html>
 <%
     HttpSession sesion = request.getSession();
-    String Usuario = request.getParameter("usuario");
-    String Password = request.getParameter("contrasenia");
+    String Usuario = sesion.getAttribute("usuario").toString();
+    String Password = sesion.getAttribute("password").toString();
      
 %>
 <html>
@@ -152,9 +152,7 @@
                             </div>
                         </div>
                     </div>
-                    <!--Fin Modal Nueva Actividad-->
-                     <!--Modal de registro de Actividad-->
-                     <jsp:include page="modal.jsp" />
+                     
                     
     <!--Fin del Modal de Registro Actividad-->
      <%

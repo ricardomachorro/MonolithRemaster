@@ -56,7 +56,7 @@ public class EnvioKerberos extends HttpServlet {
                 Hash tabla = new Hash();
                 String nombrecifrado = tabla.CifradoUsuario(Nombre, Password);
                 InetAddress address = InetAddress.getLocalHost();
-                boolean local = envio.EnviarPeticionUsuario(Nombre, nombrecifrado, address.getHostAddress(), Password);
+                boolean local = envio.EnviarPeticionUsuario(Nombre, nombrecifrado, address.getHostAddress(),Password);
                 if (local) {
                     try {
                         DataBase db = new DataBase();

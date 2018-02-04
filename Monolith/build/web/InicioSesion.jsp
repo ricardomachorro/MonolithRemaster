@@ -30,8 +30,8 @@
     }
     if (sesion.isNew()) {
         try {
-            String Usuario = request.getParameter("usuario");
-            String Password = request.getParameter("contrasenia");
+            String Usuario = sesion.getAttribute("usuario").toString();
+            String Password = sesion.getAttribute("password").toString();
             String valido;
             r = sta.executeQuery("select * from Usuario where NombreUsuario='" + Usuario + "';");
             if (r.next()) {
@@ -52,8 +52,9 @@
 </script>
 <%
                     } else {
-                response.sendRedirect("NewInicio.jsp");
-                       /*
+                       
+                        response.sendRedirect("NewInicio.jsp");
+                        /*
                         sesion.setAttribute("usuario", Usuario);
                         sesion.setAttribute("password", Password);
                         out.println("<html>");
@@ -216,7 +217,9 @@
             out.print(error.toString());
         }
     } else {
-         response.sendRedirect("NewInicio.jsp");
+         String Usuario = sesion.getAttribute("usuario").toString();
+         String Password = sesion.getAttribute("password").toString();
+        response.sendRedirect("NewInicio.jsp");
         /*
         String User = sesion.getAttribute("usuario").toString();
         out.println("<html>");

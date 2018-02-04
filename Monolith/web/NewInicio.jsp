@@ -8,8 +8,8 @@
 <!DOCTYPE html>
 <%
     HttpSession sesion = request.getSession();
-    String Usuario = request.getParameter("usuario");
-    String Password = request.getParameter("contrasenia");
+    String Usuario = sesion.getAttribute("usuario").toString();
+    String Password = sesion.getAttribute("password").toString();
      
 %>
 <html>
