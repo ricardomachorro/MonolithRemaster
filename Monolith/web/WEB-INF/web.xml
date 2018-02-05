@@ -64,6 +64,38 @@
         <url-pattern>/MarcarActividadNoFinalizada</url-pattern>
     </servlet-mapping>
     <servlet>
+        <servlet-name>IngresarExamen</servlet-name>
+        <servlet-class>FunciónMonolith.IngresarExamen</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>IngresarExamen</servlet-name>
+        <url-pattern>/IngresarExamen</url-pattern>
+    </servlet-mapping>
+     <servlet>
+        <servlet-name>EliminarExamen</servlet-name>
+        <servlet-class>FunciónMonolith.EliminarExamen</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EliminarExamen</servlet-name>
+        <url-pattern>/EliminarExamen</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>MarcarExamenFinalizado</servlet-name>
+        <servlet-class>FunciónMonolith.MarcarExamenFinalizado</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MarcarExamenFinalizado</servlet-name>
+        <url-pattern>/MarcarExamenFinalizado</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>MarcarExamenNoFinalizado</servlet-name>
+        <servlet-class>FunciónMonolith.MarcarExamenNoFinalizado</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MarcarExamenNoFinalizado</servlet-name>
+        <url-pattern>/MarcarExamenNoFinalizado</url-pattern>
+    </servlet-mapping>
+    <servlet>
         <servlet-name>ChatWindow</servlet-name>
         <servlet-class>FunciónMonolith.ChatWindow</servlet-class>
     </servlet>

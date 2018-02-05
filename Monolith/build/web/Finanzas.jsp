@@ -7,9 +7,8 @@
 <%@page import="java.sql.*, java.io.*"%>
 <%
     HttpSession sesion = request.getSession();
-    String Usuario = request.getParameter("usuario");
-    String Password = request.getParameter("contrasenia");
-     
+    String Usuario = sesion.getAttribute("usuario").toString();
+    String Password = sesion.getAttribute("password").toString();
 %>
 <html>
     <head>
@@ -20,12 +19,10 @@
         <link href="Css/BarraDeInicioSesion.css" rel="stylesheet" type="text/css">
         <link href="Css/bootstrap.css" rel="stylesheet" type="text/css">
         <link href="Css/finanzashtml.css" rel="stylesheet" type="text/css">
-        <link href="Css/test1.css" rel="stylesheet" type="text/css">  
         <script src="js/Chart.js"></script>
         <script src="js/popper.min.js"></script>
         <script src='js/jquery-3.2.1.js'></script>
         <script src='js/bootstrap.min.js'></script>
-        
     </head>
     <body>
         <% 
@@ -59,7 +56,7 @@
             }
         %>
         
-        <nav class="navbar navbar-expand-lg navbar-light  BarraDeInicio">
+       <nav class="navbar navbar-expand-lg navbar-light  BarraDeInicio">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -93,19 +90,16 @@
                             <img src="img/user.svg" class="ImagenesBarraInicio" > Usuario
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink" style="align-content:center;">
-                            <a class="dropdown-item" href="#"><img src="img/enter.svg" class="ImagenesBarraInicio" > Cerrar Sesion</a>
-                            <a class="dropdown-item" href="#"><img src="img/settings-work-tool.svg" class="ImagenesBarraInicio" >
+                            <a class="dropdown-item" href="CerrarSesion.jsp"><img src="img/enter.svg" class="ImagenesBarraInicio" > Cerrar Sesion</a>
+                            <a class="dropdown-item" href="Configuracion.jsp"><img src="img/settings-work-tool.svg" class="ImagenesBarraInicio" >
                                 Configuracion</a>
                         </div>
                     </li>
                 </ul>
             </div>
         </nav>
-
-
-       
         
-        <div class="container-fluid" style="padding-left:13px;padding-right:13px;">
+        <div class="container-fluid" >
             <div class="row categorias" >
                 <div class="col-7">
                     <div class="row barrafinanza">

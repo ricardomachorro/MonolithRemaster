@@ -115,6 +115,22 @@ public class DataBase {
         ps.execute();
         c.close();
     }
+     
+     public void CambiarExamenFinalizado(String id) throws SQLException {
+        int identic = Integer.parseInt(id);
+        String sql = "update examen set Estado='Finalizada' where IDExamen=" + identic + ";";
+        ps = c.prepareStatement(sql);
+        ps.execute();
+        c.close();
+    }
+    
+     public void CambiarExamenNoFinalizado(String id) throws SQLException {
+        int identic = Integer.parseInt(id);
+        String sql = "update examen set Estado='No Finalizada' where IDExamen=" + identic + ";";
+        ps = c.prepareStatement(sql);
+        ps.execute();
+        c.close();
+    }
 
     public void IngresarExamen(Examen exa) throws SQLException {
         String sql = "insert into examen(Titulo,FormaDeEntregar,Descripcion,IDUsuario,FechaLimite,Estado) values (?,?,?,?,?,?);";
