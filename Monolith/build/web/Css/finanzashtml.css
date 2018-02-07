@@ -1,14 +1,32 @@
 body {
     font-family: sans-serif;
+    background-color:#e1f7f5;
 }
 
+/*  Seccion para listas colgantes*/
+
+.ContenedoresListasColgantes{
+    padding:13px;
+}
+
+.ListasColgantes{
+    color:#313D66;
+    padding:13px;
+    text-height:max-size;
+    font-weight:bolder;
+    border-bottom:6px solid #17a2b8;
+    background-color:#fff;
+}
+/*Fin   Seccion para listas colgantes*/
+
 .categorias{
-   margin-top:150px;
+   margin-top:0px;
    margin-bottom:30px;
 }
 
 .barrafinanza{
     background-color:#006064;
+    padding:13px;
 }
 .titubarrafinianza{
     margin-top:10%;

@@ -74,7 +74,7 @@
                         <a class="nav-link"  href="Examen.jsp"><img src="img/exam.svg" class="ImagenesBarraInicio" >Examenes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Proyectos.html" ><img src="img/group-button.svg" class="ImagenesBarraInicio" >Proyectos</a>
+                        <a class="nav-link" href="Proyectos.jsp" ><img src="img/group-button.svg" class="ImagenesBarraInicio" >Proyectos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Finanzas.jsp" ><img src="img/money-bag-with-dollar-symbol.svg" class="ImagenesBarraInicio" >Finanzas</a>
@@ -100,6 +100,18 @@
         </nav>
         
         <div class="container-fluid" >
+            <!---TIuloModulo-->
+            <div class="row ContenedoresListasColgantes">
+                <div class=" col-12 ">
+                    <div class="row ListasColgantes">
+                        <div class="col-12" >
+                            <h2 align="center">Finanzas</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---Fin TituloModulo-->
+            
             <div class="row categorias" >
                 <div class="col-7">
                     <div class="row barrafinanza">

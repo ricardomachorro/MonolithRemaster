@@ -1,0 +1,49 @@
+/*  Seccion para listas colgantes*/
+
+.ContenedoresListasColgantes{
+    padding:13px;
+}
+
+.ListasColgantes{
+    color:#313D66;
+    padding:13px;
+    text-height:max-size;
+    font-weight:bolder;
+    border-bottom:6px solid #17a2b8;
+    background-color:#fff;
+}
+/*Fin   Seccion para listas colgantes*/
+
+
+
+/*CSS Titulo de la Lista Actividades
+*/
+.titulolista{
+    text-align:center;
+    border-width:thick;
+    color:#000;
+}
+
+/* Fin CSS Titulo de la Lista Actividades
+*/
+
+/*Cartel nuevo Proyecto*/
+.CartelNuevoProyecto{
+  padding-top:13px;
+  padding-bottom:13px;
+  padding-left:40px;
+  padding-right:40px;
+}
+
+.Cartel{
+    background-color:#fff;
+    padding:13px;
+    font-size:30px;
+   
+}
+
+#LogoNuevoProyecto{
+    width:50px;
+    height:50px;
+}
+/*Fin Cartel nuevo Proyecto*/

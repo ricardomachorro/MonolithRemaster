@@ -44,7 +44,7 @@
                         <a class="nav-link"  href="Examen.jsp"><img src="img/exam.svg" class="ImagenesBarraInicio" >Examenes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Proyectos.html" ><img src="img/group-button.svg" class="ImagenesBarraInicio" >Proyectos</a>
+                        <a class="nav-link" href="Proyectos.jsp" ><img src="img/group-button.svg" class="ImagenesBarraInicio" >Proyectos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Finanzas.jsp" ><img src="img/money-bag-with-dollar-symbol.svg" class="ImagenesBarraInicio" >Finanzas</a>
@@ -109,10 +109,33 @@
                                             <div class="row">
                                                 <div class="col-12 ContenedorListaResumen" >
                                                     <ul>
-                                                        <li>Actividades Pendientes:</li>
-                                                        <li>Proyectos Pendientes:</li>
-                                                        <li>Examenes Proximos:</li>
-                                                        <li>Eventos Expirados:</li>
+                                                    <%
+                                                        Connection con = null;
+                                                         Statement sta = null;
+                                                         ResultSet r = null;
+                                                         int ActividadesPendientes=0;
+                                                         int ExamenesPendientes=0;
+                                                         try {
+                                                             Class.forName("com.mysql.jdbc.Driver").newInstance();
+                                                             con = DriverManager.getConnection("jdbc:mysql://localhost/monolith", "root", "n0m3l0");
+                                                             sta = con.createStatement();
+                                                             r = sta.executeQuery("select * from Actividad inner join usuario on actividad.IDUsuario=usuario.IDUsuario where usuario.NombreUsuario='" + Usuario + "' and Estado='No Finalizada';");
+                                                             while(r.next()){
+                                                                ActividadesPendientes+=1; 
+                                                             }
+                                                             r = sta.executeQuery("select * from Examen inner join usuario on examen.IDUsuario=usuario.IDUsuario where usuario.NombreUsuario='" + Usuario + "' and Estado='No Finalizada';");
+                                                             while(r.next()){
+                                                                ExamenesPendientes+=1; 
+                                                             }
+                                                             out.println("<li>Actividades Pendientes:"+ActividadesPendientes+"</li>");
+                                                             out.println("<li>Examenes Pendientes:"+ExamenesPendientes+"</li>");
+                                                             int EventosTotales=ActividadesPendientes+ExamenesPendientes;
+                                                             out.println("<li>Eventos Pendientes:"+EventosTotales+"</li>");
+                                                         } catch (Exception ex) {
+                                                             out.print(ex.toString());
+                                                         }
+                                                    %>
+       
                                                     </ul>
                                                 </div> 
                                             </div>
@@ -138,10 +161,25 @@
                                             <div class="row">
                                                 <div class="col-12 ContenedorListaResumen" >
                                                     <ul>
-                                                        <li>Actividades Finalizadas:</li>
-                                                        <li>Proyectos Finalizados:</li>
-                                                        <li>Examenes Finalizados:</li>
-                                                        <li>Total Actividades Finalizados:</li>
+                                                        <%
+                                                         int ActividadesFinalizadas=0;
+                                                         int ExamenesFinalizados=0;
+                                                         r = sta.executeQuery("select * from Actividad inner join usuario on actividad.IDUsuario=usuario.IDUsuario where usuario.NombreUsuario='" + Usuario + "' and Estado='Finalizada';");
+                                                           while(r.next()){
+                                                               ActividadesFinalizadas+=1;
+                                                           }
+                                                            r = sta.executeQuery("select * from Examen inner join usuario on examen.IDUsuario=usuario.IDUsuario where usuario.NombreUsuario='" + Usuario + "' and Estado='Finalizada';");
+                                                             while(r.next()){
+                                                                ExamenesFinalizados+=1; 
+                                                            }
+                                                            out.println("<li>Actividades Finalizadas:"+ActividadesFinalizadas+"</li>");
+                                                           out.println("<li>Examenes Finalizados:"+ExamenesFinalizados+"</li>");
+                                                           int EventosFinalizados=ActividadesFinalizadas+ExamenesFinalizados;
+                                                           out.println("<li>Total Actividades Finalizados:"+EventosFinalizados+"</li>");
+                                                        %>
+ 
+                                                        
+                                                       
                                                     </ul>
                                                 </div> 
                                             </div>
@@ -269,8 +307,7 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
+
 
 <!--Fin de Contenedor de Elementos-->
 

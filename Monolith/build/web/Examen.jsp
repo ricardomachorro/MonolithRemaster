@@ -16,9 +16,10 @@
         <title>Examenes</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <link href="Css/examenstyle.css" rel="stylesheet" type="text/css">
-        <link href="Css/BarraDeInicioSesion.css" rel="stylesheet" type="text/css">
         <link href="Css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="Css/BarraDeInicioSesion.css" rel="stylesheet" type="text/css">
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
@@ -26,7 +27,7 @@
         <script src="js/validacionexamen.js"></script>
 
     </head>
-    <body>
+    <body >
         <nav class="navbar navbar-expand-lg navbar-light  BarraDeInicio">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -45,7 +46,7 @@
                         <a class="nav-link"  href="Examen.jsp"><img src="img/exam.svg" class="ImagenesBarraInicio" >Examenes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Proyectos.html" ><img src="img/group-button.svg" class="ImagenesBarraInicio" >Proyectos</a>
+                        <a class="nav-link" href="Proyectos.jsp" ><img src="img/group-button.svg" class="ImagenesBarraInicio" >Proyectos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Finanzas.jsp" ><img src="img/money-bag-with-dollar-symbol.svg" class="ImagenesBarraInicio" >Finanzas</a>
@@ -74,9 +75,13 @@
 
             <!--Inicio Cartas de Actividades-->
             <!---TIuloModulo-->
-            <div class="row" style="padding-top:125px;">
-                <div class="titulolista col-12 ">
-                    <h2 align="center">Lista Examenes</h2>
+            <div class="row ContenedoresListasColgantes">
+                <div class=" col-12 ">
+                    <div class="row ListasColgantes">
+                        <div class="col-12" >
+                            <h2 align="center">Lista Examenes</h2>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!---Fin TituloModulo-->
