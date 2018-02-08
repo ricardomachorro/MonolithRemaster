@@ -39,7 +39,6 @@
     background-color:#fff;
     padding:13px;
     font-size:30px;
-   
 }
 
 #LogoNuevoProyecto{
@@ -47,3 +46,35 @@
     height:50px;
 }
 /*Fin Cartel nuevo Proyecto*/
+
+/* Elementos del form de nuevo Proyecto*/
+#BotonAgregarIntegrante{
+    width:80px;
+    height:40px;
+    margin-top:18px;
+}
+
+#VandejaCorreos{
+    margin-top:12px;
+}
+
+.TarjetasCorreo{
+   
+   margin-top:13px;
+    margin-bottom:13px;
+     padding-left:23px;
+     padding-right:53px;
+}
+
+.TarjetasCorreoCarta{
+    background-color:#17a2b8;
+   margin-left:23px;
+   margin-right:23px;
+    padding:13px;
+}
+
+.ImagenBasuraCorreo{
+    height:30px;
+    width:30px;
+}
+/*Fin Elementos del form de nuevo Proyecto*/

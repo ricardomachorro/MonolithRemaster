@@ -14,9 +14,9 @@ import javax.xml.bind.DatatypeConverter;
 
 public class ServerCliente {
 
-    static final String HOST1 = "192.168.9.111";
+    static final String HOST1 = "192.168.0.6";
     static final int PUERTO1 = 3000;
-    static final String HOST2 = "192.168.9.111";
+    static final String HOST2 = "192.168.0.6";
     static final int PUERTO2 = 4000;
     ObjectOutputStream alServidor;
     ObjectInputStream delServidor;
